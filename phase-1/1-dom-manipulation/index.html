@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document Object Model</title>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/javascript">
+            // Your code goes here
+
+            // selection div element with id 'root'
+            const root = document.getElementById('root');
+
+            // creating h1 element
+            const header = document.createElement('h1');
+
+            // creating text node
+            const headerContent = document.createTextNode('Hello World with ABC');
+
+            // appending text node to h1 element
+            header.appendChild(headerContent);
+
+            // appending h1 element to div element
+            root.appendChild(header);
+        </script>
+    </body>
+</html>
